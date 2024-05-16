@@ -13,11 +13,6 @@
 
             CriticalValue criticalResult1 = new CriticalValue("Red", "Paciente con troponinas elevadas, riesgo inminente de infarto");
             externalConsult.handleCriticalvalue(criticalResult1);
-
-
-
-
-
         }
     }
 }

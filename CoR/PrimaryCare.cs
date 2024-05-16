@@ -9,10 +9,12 @@ namespace CoR.CoR
     public class PrimaryCare : IHandler
     {
         private IHandler _nextHandler;
+
         public void setNextFloor(IHandler nextFloor)
         {
             _nextHandler = nextFloor;
         }
+
         public void handleCriticalvalue(CriticalValue criticalValue)
         {
             if (criticalValue.screeningColor().ToString().Equals("Yellow"))
@@ -23,8 +25,6 @@ namespace CoR.CoR
             {
                 _nextHandler.handleCriticalvalue(criticalValue);
             }
-
         }
     }
-
 }
