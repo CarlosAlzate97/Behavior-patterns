@@ -9,6 +9,6 @@ namespace CoR
     public interface IHandler
     {
         public void setNextFloor(IHandler nextFloor);
-        void handleCriticalvalue(CriticalValue criticalValue);
+        public void handleCriticalvalue(CriticalValue criticalValue);
     }
 }
