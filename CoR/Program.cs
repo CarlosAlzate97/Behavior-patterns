@@ -1,4 +1,4 @@
-﻿namespace CoR
+﻿namespace CoR.CoR
 {
     public class Program
     {
@@ -11,7 +11,7 @@
             externalConsult.setNextFloor(primaryCare);
             primaryCare.setNextFloor(emergency);
 
-            CriticalValue criticalResult1 = new CriticalValue("Red","Paciente con troponinas elevadas, riesgo inminente de infarto");
+            CriticalValue criticalResult1 = new CriticalValue("Red", "Paciente con troponinas elevadas, riesgo inminente de infarto");
             externalConsult.handleCriticalvalue(criticalResult1);
 
 

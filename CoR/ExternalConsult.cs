@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoR
+namespace CoR.CoR
 {
-    public class PrimaryCare : IHandler
+    public class ExternalConsult : IHandler
     {
         private IHandler _nextHandler;
         public void setNextFloor(IHandler nextFloor)
@@ -15,9 +15,9 @@ namespace CoR
         }
         public void handleCriticalvalue(CriticalValue criticalValue)
         {
-            if (criticalValue.screeningColor().ToString().Equals("Yellow"))
+            if (criticalValue.screeningColor().ToString().Equals("Green"))
             {
-                Console.WriteLine($"Caso manejado por atención primaria (AP), el resultado crítico fue: {criticalValue.criticalResult()}");
+                Console.WriteLine($"Caso manejado por consulta externa, el resultado crítico fue: {criticalValue.criticalResult()}");
             }
             else if (_nextHandler is not null)
             {

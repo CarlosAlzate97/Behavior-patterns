@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoR
+namespace CoR.CoR
 {
     public class CriticalValue
     {
