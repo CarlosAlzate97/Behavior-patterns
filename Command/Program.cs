@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Behaviour_patterns.Command
 {
-    public class Program1
+    public class Program
     {
         public static void Main(string[] args) 
         { 
@@ -17,8 +18,12 @@ namespace Behaviour_patterns.Command
 
             Dualsense dualsense = new Dualsense();
 
-            dualsense.buttonXAction(reload);
             dualsense.buttonSquareAction(shootFullMagazine);
+            dualsense.pressButtonSquare();
+
+            dualsense.buttonXAction(reload);
+            dualsense.pressButtonX();
+
             dualsense.pressButtonTriangle();
 
         }

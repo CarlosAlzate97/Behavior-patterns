@@ -17,8 +17,6 @@ namespace Behaviour_patterns.Command
         public void execute()
         {
             _gun.ShootGun();
-            _gun.NoAmmo();
-            _gun.IsCharged();
         }
     }
 }

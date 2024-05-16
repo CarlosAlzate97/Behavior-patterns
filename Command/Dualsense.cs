@@ -22,14 +22,17 @@ namespace Behaviour_patterns.Command
 
         public void pressButtonX()
         {
+            Console.WriteLine("Se ha presionado el boton X");
             _buttonX.execute();
         }
         public void pressButtonSquare()
         {
+            Console.WriteLine("Se ha presionado el boton cuadrado");
             _buttonSquare.execute();
         }
         public void pressButtonTriangle()
         {
+            Console.WriteLine("Se ha presionado el boton triangulo");
             Console.WriteLine("No se ha definido comando para este boton");
         }
 
